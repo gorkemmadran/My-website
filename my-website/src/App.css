@@ -10,7 +10,7 @@
     height: 4px;
     width: 0px;
     left: 0;
-    bottom: -20px;
+    bottom: -10px;
     transition: 1s;
 }
 .menu-item:hover{
@@ -21,3 +21,31 @@
     width: 100%;
     border-radius: 100%;
 }
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+  }
+  
+  .close-button::before, .close-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+  }
+  
+  .close-button::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .close-button::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
