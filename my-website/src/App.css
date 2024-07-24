@@ -50,42 +50,22 @@
   .close-button::after {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-  .tailwind{
-    color :#38BDF8;
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   
-  .bootstrap{
-    color :#563D7C;
+  .elipse {
+    transition: transform 0.5s ease-in-out;
   }
-  .sass{
-    color :#CC6699;
+  
+  .elipse:hover {
+    animation: rotate 1s linear infinite;
+    border: 5px white solid;
+    
   }
-  .react{
-    color : #61DAFB;
-  }
-  .javascript{
-    color :#F7DF1E;
-  }
-  .css{
-    color : #1572B6; 
-  }
-  .html{
-    color :#E34F26 ;
-  }
-  .icon {
-    transition: transform 0.3s;
-    cursor: pointer;
-  }
-
-  .icon:hover {
-    animation: hop 0.6s ease-in-out infinite;
-  }
-
-  @keyframes hop {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
+  
