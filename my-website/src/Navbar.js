@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <div>
       {clicked && !closeBtnClicked ? (
-        <div className='navbar-menu-items relative w-[100%]'>
+        <div className='navbar-menu-items relative w-[100%] h-[100vh] z-50'>
           <ul className='w-[80%] mx-auto block text-center'>
             <li className='pt-2'><a className='menu-item block font-opensans sm:mx-0 mt-12 cursor-pointer my-2 mx-2 px-4'>Home</a></li>
             <li className='pt-2 mt-1'><a className='menu-item block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>About Me</a></li>
