@@ -32,7 +32,7 @@ function Navbar() {
           </ul>
         </div>
       ) : (
-        <header className='navbar-area container flex items-center justify-between mx-auto'>
+        <header className='navbar-area container flex items-center justify-around mx-auto'>
           <div className='navbar-logo'>
             <img className='max-w-20' src={NavbarLogo} alt="Logo" />
           </div>

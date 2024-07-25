@@ -16,7 +16,7 @@ import { FaHandPeace } from "react-icons/fa";
 function Home() {
   return (
     <section className='home'>
-        <div className='container  mx-auto h-[85vh] xs:flex xs:justify-around xs:items-center   xs:flex-col-reverse sm:flex-col-reverse  md:flex-row lg:flex-row xl:flex-row 2xl:flex-row flex items-center justify-between '>
+        <div className='container   mx-auto h-[85vh] xs:flex xs:justify-around xs:items-center   xs:flex-col-reverse sm:flex-col-reverse  md:flex-row lg:flex-row xl:flex-row 2xl:flex-row flex items-center justify-between '>
             <div className='xs:flex xs:items-center xs:justify-center xs:flex-col'>
               <div className='flex   items-center '>
               <h2 className='text-black font-opensans home-title font-thin   tracking-wide	 text-7xl'>Hello,   </h2>
