@@ -2,6 +2,8 @@ import './App.css';
 import Navbar from './Navbar';
 import Home from './Home'
 import Aboutme from './Aboutme';
+import Cv from './Cv';
+import Skills from './Skills';
 
 function App() {
   return (
@@ -9,6 +11,9 @@ function App() {
     <Navbar/>
     <Home/>
     <Aboutme/>
+    <Skills/>
+
+    <Cv/>
     </>
   );
 }

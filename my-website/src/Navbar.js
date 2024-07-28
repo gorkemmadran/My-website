@@ -24,7 +24,6 @@ function Navbar() {
             <li className='pt-2'><a className='menu-item block font-opensans sm:mx-0 mt-12 cursor-pointer my-2 mx-2 px-4'>Home</a></li>
             <li className='pt-2 mt-1'><a className='menu-item block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>About Me</a></li>
             <li className='pt-2 mt-1'><a className='menu-item block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>Projects</a></li>
-            <li className='pt-2 mt-1'><a className='menu-item block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>Skills</a></li>
             <li className='pt-2 mt-1'><a className='menu-item block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>Contact</a></li>
             <div>
               <button onClick={buttonClicked} className='bg-black absolute z-50 top-0 rounded-r-none right-0 text-white w-[50px] rounded h-[42px]'>X</button>
@@ -41,7 +40,6 @@ function Navbar() {
               <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4'>Home</a></li>
               <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4'>About Me</a></li>
               <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4'>Projects</a></li>
-              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4'>Skills</a></li>
               <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4'>Contact</a></li>
             </ul>
           </div>
