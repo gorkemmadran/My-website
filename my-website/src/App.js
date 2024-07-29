@@ -4,6 +4,7 @@ import Home from './Home'
 import Aboutme from './Aboutme';
 import Cv from './Cv';
 import Skills from './Skills';
+import Projects from './Projects';
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
     <Home/>
     <Aboutme/>
     <Skills/>
-
     <Cv/>
+    <Projects/>
     </>
   );
 }

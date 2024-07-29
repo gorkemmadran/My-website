@@ -47,7 +47,7 @@ function Skills() {
             <div className='w-[130px] m-[5px] flex items-center justify-center flex-col h-[100px] border border-black hover:shadow-xl hover:shadow-purple-600 hover:border-purple-600'><FaFigma className='figma text-5xl' /><p className='font-semibold text-sm mt-1'>Figma</p></div>
             <div className='w-[130px] m-[5px] flex items-center justify-center flex-col h-[100px] border border-black hover:shadow-xl hover:shadow-pink-600 hover:border-pink-600'><FaSass className='sass text-5xl' /><p className='font-semibold text-sm mt-1'>Sass</p></div>
             </div>
-            <div className='flex items-center justify-center flex-wrap mt-2'>
+            <div className='flex items-center justify-center flex-wrap mt-2 mb-10'>
               <div className='w-[130px] m-[5px] flex items-center justify-center flex-col h-[100px] border border-black hover:shadow-xl hover:shadow-green-600 hover:border-green-600'><SiBulma className='bulma text-5xl' /><p className='font-semibold text-sm mt-1'>Bulma</p></div>
             <div className='w-[130px] flex items-center m-[5px] justify-center flex-col h-[100px] border border-black hover:shadow-xl hover:shadow-orange-600 hover:border-orange-600 '><FaGit className='git text-5xl'  /><p className='font-semibold text-sm mt-1'>Git</p></div>
             <div className='w-[130px] flex items-center m-[5px] justify-center flex-col h-[100px] border border-black hover:shadow-xl hover:shadow-black  hover:border-black'><FaGithub className='github text-5xl' /><p className='font-semibold text-sm mt-1'>Github</p></div>
