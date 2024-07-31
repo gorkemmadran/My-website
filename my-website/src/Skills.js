@@ -30,7 +30,7 @@ import { SiVisualstudiocode } from "react-icons/si";
 function Skills() {
   return (
     <div className='skilss'>
-        <div className='flex  container mx-auto items-center mt-[20px]  flex-col '>
+        <div className='flex justify-between  container mx-auto items-center mt-[60px] mb-[60px]  flex-col '>
             <h2 className='text-3xl font-extrabold'>Skills</h2>
         <div className='flex items-center mt-3'><div className='h-[4px] bg-black w-[140px]'></div><div className='h-[2px]  bg-gray-500 w-[70px]'></div></div> 
             </div>

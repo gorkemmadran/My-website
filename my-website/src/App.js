@@ -5,6 +5,8 @@ import Aboutme from './Aboutme';
 import Cv from './Cv';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
+import Footer from './Footer'
 
 function App() {
   return (
@@ -13,8 +15,11 @@ function App() {
     <Home/>
     <Aboutme/>
     <Skills/>
-    <Cv/>
+    
     <Projects/>
+    <Cv/>
+    <Contact/>
+    <Footer/>
     </>
   );
 }
