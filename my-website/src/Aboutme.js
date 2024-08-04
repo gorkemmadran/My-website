@@ -15,7 +15,7 @@ function Aboutme() {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
   return (
-    <section className={darkMode ? 'dark bg-black ' : ''}>
+    <section className={darkMode ? 'dark bg-black duration-700  ' : ''}>
         <div className='container h-[100vh] xs:block sm:block md:flex lg:flex xl:flex 2xl:flex mx-auto pt-20 flex items-center justify-around flex-wrap '>
         <div className='bg-black dark:bg-white shadow-2xl xs:w-[100%] xs:h-[30vh] sm:w-[100%] sm:h-[40vh] md:w-[90%] md:mx-auto md:h-[50vh] lg:h-[75vh] lg:w-[380px] xl:h-[480px] xl:w-[380] 2xl:h-[480px] 2xl:w-[380]  shadow-black rounded-md w-[380px] flex items-center justify-center h-[480px]'>
             <p>İmage Gelecek </p>

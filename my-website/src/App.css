@@ -102,6 +102,9 @@
   .git{
     color: #f34f29;
   }
+  .vite{
+    color :#00FF00;
+  }
 
   .github{
     color : #181717 ;
@@ -112,7 +115,6 @@
   }
   .arrow{
     animation:  bounce 1s infinite;
-    color: white!important;
 
   }
 
