@@ -40,10 +40,10 @@ function Navbar() {
           </div>
           <div className='navbar-menu-items'>
             <ul className='flex items-center xs:hidden sm:text-sm xs:text-sm md:text-sm lg:text-base xl:text-base 2xl:text-base sm:flex sm:mx-0 md:flex lg:flex xl:flex 2xl:flex'>
-              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-white dark:hover:text-gray-300'>Home</a></li>
-              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-white dark:hover:text-gray-300'>About Me</a></li>
-              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-white dark:hover:text-gray-300'>Projects</a></li>
-              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-white dark:hover:text-gray-300'>Contact</a></li>
+              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>Home</a></li>
+              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>About Me</a></li>
+              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>Projects</a></li>
+              <li className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'><a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>Contact</a></li>
             </ul>
           </div>
           <div className='navbar-icon xs:hidden sm:block md:block lg:block xl:block 2xl:block'>

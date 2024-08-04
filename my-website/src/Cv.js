@@ -10,9 +10,9 @@ function Cv() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-    <div className='bg-black flex items-center justify-center flex-col h-[27vh] dark:bg-gray-500'>
+    <div className='bg-black flex items-center justify-center flex-col h-[27vh] dark:bg-zinc-200'>
       <h2 className='text-white text-xl mt-2 dark:text-black'>Download My CV</h2>
-      <p className='text-zinc-400 mt-2 text-sm text-center'>İf you would like to learn more about my professional background, please feel free to download and review my CV.</p>
+      <p className='text-zinc-400 mt-2 text-sm text-center xs:px-5'>İf you would like to learn more about my professional background, please feel free to download and review my CV.</p>
       <div className='flex mt-2'>
       <FaLongArrowAltDown className='text-white arrow text-4xl dark:text-black' />
       <FaLongArrowAltDown className='text-white arrow  text-4xl dark:text-black' />

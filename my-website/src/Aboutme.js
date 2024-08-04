@@ -22,7 +22,7 @@ function Aboutme() {
         </div>
         <div className=' w-[600px]  xs:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[500px] xl:w-[600px] 2xl:w-[600px]   '>
             <div className='xs:flex xs:items-center xs:justify-center xs:flex-col xs:mt-[30px] sm:flex sm:items-center sm:justify-center sm:flex-col sm:mt-[30px] md:flex md:items-center md:justify-center md:flex-col md:mt-[30px] lg:block xl:block 2xl:block  '>
-            <h2 className='text-3xl font-extrabold dark:text-white'>About Me</h2>
+            <h2 className='text-3xl font-extrabold dark:text-zinc-300'>About Me</h2>
         <div className='flex items-center mt-3'><div className='h-[4px] dark:bg-white bg-black w-[140px]'></div><div className='h-[2px] dark:bg-gray-500 w-[70px]'></div></div> 
             </div>
         
