@@ -11,7 +11,7 @@ function Contact() {
     const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
+    <div id='contact' className={darkMode ? 'dark' : ''}>
     <div className='contact pt-[65px] pb-[65px] dark:bg-black '>
         <div className='container mx-auto flex items-center justify-around '>
         <div className='contact-title xs:flex xs:items-center xs:justify-around xs:flex-col xs:mt-[30px] sm:flex sm:items-center sm:justify-around sm:flex-col sm:mt-[30px] md:flex md:items-center md:justify-center md:flex-col md:mt-[30px] lg:block xl:block 2xl:block  '>

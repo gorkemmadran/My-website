@@ -3,7 +3,8 @@ import NavbarLogo from './image/Logo.png';
 import NavbarDarkLogo from './image/NavbarDarkLogo.png';
 import { FaMoon } from "react-icons/fa6";
 import { DarkModeContext } from './DarkModeContext';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { Link } from 'react-scroll';
 
 function Navbar() {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
@@ -38,7 +39,7 @@ function Navbar() {
     }
   };
 
-  const liItems1 = {
+  const liItems = {
     hidden: { 
       opacity: 0,
       y: -100,
@@ -49,56 +50,31 @@ function Navbar() {
       transition: { duration: 1.3, ease: "easeOut" }
     }
   };
-  const liItems2 = {
-    hidden: { 
-      opacity: 0,
-      y: -100,
-    },
-    visible: { 
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1.5, ease: "easeOut" }
-    }
-  };
-  const liItems3 = {
-    hidden: { 
-      opacity: 0,
-      y: -100,
-    },
-    visible: { 
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1.7, ease: "easeOut" }
-    }
-  };
-  const liItems4 = {
-    hidden: { 
-      opacity: 0,
-      y: -100,
-    },
-    visible: { 
-      opacity: 1,
-      y: 0,
-      transition: { duration: 2, ease: "easeOut" }
-    }
-  };
 
   return (
     <div className={darkMode ? 'dark' : ''}>
       {clicked && !closeBtnClicked ? (
-        <div className='navbar-menu-items relative w-[100%] h-[100vh] bg-white dark:bg-black z-50'>
+        <div className='navbar-menu-items relative  w-[100%] h-[100vh] bg-white dark:bg-black z-50'>
           <ul className='w-[80%] mx-auto block text-center'>
-            <li  className='pt-2'>
-              <motion.a animate="visible" initial="hidden" variants={liItems2} className='menu-item dark:text-white block font-opensans sm:mx-0 mt-12 cursor-pointer my-2 mx-2 px-4'>Home</motion.a>
-            </li>
-            <li  className='pt-2 mt-1'>
-              <motion.a animate="visible" initial="hidden" variants={liItems2} className='menu-item dark:text-white block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>About Me</motion.a>
-            </li>
-            <li  className='pt-2 mt-1'>
-              <motion.a animate="visible" initial="hidden" variants={liItems3}  className='menu-item dark:text-white block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>Projects</motion.a>
+            <li className='pt-2'>
+              <motion.a animate="visible" initial="hidden" variants={liItems} className='menu-item dark:text-white block font-opensans sm:mx-0 mt-12 cursor-pointer my-2 mx-2 px-4'>
+                <Link to="navbar" smooth={true} duration={500}>Home</Link>
+              </motion.a>
             </li>
             <li className='pt-2 mt-1'>
-              <motion.a animate="visible" initial="hidden" variants={liItems4}  className='menu-item dark:text-white block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>Contact</motion.a>
+              <motion.a animate="visible" initial="hidden" variants={liItems} className='menu-item dark:text-white block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>
+                <Link to="about" smooth={true} duration={500}>About Me</Link>
+              </motion.a>
+            </li>
+            <li className='pt-2 mt-1'>
+              <motion.a animate="visible" initial="hidden" variants={liItems} className='menu-item dark:text-white block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>
+                <Link to="projects" smooth={true} duration={500}>Projects</Link>
+              </motion.a>
+            </li>
+            <li className='pt-2 mt-1'>
+              <motion.a animate="visible" initial="hidden" variants={liItems} className='menu-item dark:text-white block font-opensans sm:mx-0 cursor-pointer my-2 mx-2 px-4'>
+                <Link to="contact" smooth={true} duration={500}>Contact</Link>
+              </motion.a>
             </li>
             <div>
               <button onClick={buttonClicked} className='bg-black absolute z-50 top-0 rounded-r-none right-0 text-white w-[50px] rounded h-[42px]'>X</button>
@@ -106,23 +82,34 @@ function Navbar() {
           </ul>
         </div>
       ) : (
-        <header className='navbar-area flex items-center h-[14vh] dark:h-[14vh] justify-around mx-auto bg-white dark:bg-black'>
+        <header id='navbar' className='navbar-area flex items-center h-[14vh] dark:h-[14vh] justify-around mx-auto bg-white dark:bg-black'>
           <motion.div initial="hidden" animate="visible" variants={logoVariants} className='navbar-logo'>
-            <img className='max-w-20' src={darkMode ? NavbarDarkLogo : NavbarLogo} alt="Logo" />
+          <Link to="navbar" smooth={true} duration={500}>
+          <img className='max-w-20 cursor-pointer' src={darkMode ? NavbarDarkLogo : NavbarLogo} alt="Logo" />
+          </Link>
+            
           </motion.div>
           <div className='navbar-menu-items'>
             <ul className='flex items-center xs:hidden sm:text-sm xs:text-sm md:text-sm lg:text-base xl:text-base 2xl:text-base sm:flex sm:mx-0 md:flex lg:flex xl:flex 2xl:flex'>
-              <motion.li animate="visible" initial="hidden" variants={liItems1} className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'>
-                <a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>Home</a>
+              <motion.li animate="visible" initial="hidden" variants={liItems} className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'>
+                <a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>
+                  <Link to="navbar" smooth={true} duration={500}>Home</Link>
+                </a>
               </motion.li>
-              <motion.li animate="visible" initial="hidden" variants={liItems2}className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'>
-                <a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>About Me</a>
+              <motion.li animate="visible" initial="hidden" variants={liItems} className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'>
+                <a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>
+                  <Link to="about" smooth={true} duration={500}>About Me</Link>
+                </a>
               </motion.li>
-              <motion.li animate="visible" initial="hidden" variants={liItems3} className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'>
-                <a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>Projects</a>
+              <motion.li animate="visible" initial="hidden" variants={liItems} className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'>
+                <a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>
+                  <Link to="project" smooth={true} duration={500}>Projects</Link>
+                </a>
               </motion.li>
-              <motion.li animate="visible" initial="hidden" variants={liItems4} className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'>
-                <a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>Contact</a>
+              <motion.li animate="visible" initial="hidden" variants={liItems} className='sm:mx-1 md:mx-2 lg:mx-2 xl:mx-2 2xl:mx-2'>
+                <a className='menu-item font-sans sm:mx-0 cursor-pointer my-3 px-4 dark:text-zinc-300 dark:hover:text-white'>
+                  <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                </a>
               </motion.li>
             </ul>
           </div>
