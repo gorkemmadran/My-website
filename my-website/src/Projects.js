@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ProjeOne from  './image/project..jpg'
 import { DarkModeContext } from './DarkModeContext';
 import { useContext } from 'react';
+import { FaSquareGithub } from "react-icons/fa6";
+import Mywebsite from './image/webimg.png'
 
 function Projects() {
   const { darkMode } = useContext(DarkModeContext);
@@ -12,7 +14,7 @@ function Projects() {
   };
 
   return (
-    <div className={darkMode ? 'dark bg-black' : ''}>
+    <div id='project' className={darkMode ? 'dark bg-black' : ''}>
       <div className='xs:flex xs:items-center xs:justify-center xs:flex-col  sm:flex sm:items-center sm:justify-center sm:flex-col md:flex md:items-center md:justify-center md:flex-col  lg:flex lg:items-center lg:justify-center xl:flex xl:justify-center xl:items-center 2xl:flex 2xl:items-center 2xl:justify-center     '>
         <h2 className='text-3xl font-extrabold dark:text-zinc-200'>Projects</h2>
         <div className='flex items-center  mt-3'>
@@ -21,71 +23,193 @@ function Projects() {
         </div>
       </div>
       <div className='container mx-auto flex items-center justify-evenly mt-[60px] pb-[60px] flex-wrap'>
-        <div className='card border  border-black border-t-4 shadow-lg shadow-gray-600 rounded-tr-2xl rounded-l-md  w-[370px] justify-between  flex items-center bg-gray  mt-[30px] h-[370px] flex-col dark:border-gray-400'>
-          <img style={{width : '420px', height : '315px', margin : 'auto', borderRadius : '10px'  }} src={ProjeOne}></img>
+        <div className='card border  border-black border-t-4 shadow-lg shadow-gray-600 w-1/3 h-[405px] justify-between  flex items-center bg-gray  mt-[30px]  flex-col dark:border-gray-400'>
+          <div className='w-full h-full overflow-auto '>
+        <img 
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+  }} 
+  src={Mywebsite} 
+  alt="Website Screenshot"
+/> </div>
+
           <div className='card-footer flex justify-center  flex-col w-[100%] bg-black  text-white p-5 h-[60px]'>
-            <p>Spotify - Login</p>
-            <p>Proje 1 :</p>
+          <div className='flex items-center justify-between flex-row'>
+          <h1>Personal Portolio</h1>
+          <div className='flex items-center justify-center flex-row'>
+          <FaSquareGithub initial="hidden" className='mr-[10px] text-xl rounded-full' /> 
+          <h1>Live</h1>
+
+          </div>
+
+          </div>
           </div>
         </div>
-        <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 rounded-tr-2xl rounded-l-md  w-[370px] justify-between  flex items-center bg-gray  mt-[30px] h-[370px] flex-col dark:border-gray-400'>
-        <img style={{width : '420px', height : '315px', margin : 'auto', borderRadius : '10px'  }} src={ProjeOne}></img>
+        <div className='card border border-black border-t-4 w-1/3 h-[405px] shadow-lg shadow-gray-600  justify-between  flex items-center bg-gray  mt-[30px]  flex-col dark:border-gray-400'>
 
-                    <div className='card-footer flex justify-center flex-col w-[100%] bg-black text-white p-5 h-[60px]'>
-            <p>Spotify - Login</p>
-            <p>Proje 2 :</p>
-          </div>
-        </div>
-        <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 rounded-tr-2xl rounded-l-md  w-[370px] justify-between  flex items-center bg-gray  mt-[30px] h-[370px] flex-col  dark:border-gray-400'>
-        <img style={{width : '420px', height : '315px', margin : 'auto', borderRadius : '10px'  }} src={ProjeOne}></img>
-
-          <div className='card-footer flex justify-center flex-col w-[100%] bg-black text-white p-5 h-[60px]'>
-            <p>Spotify - Login</p>
-            <p>Proje 3 :</p>
-          </div>
-        </div>
-        <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 rounded-tr-2xl rounded-l-md  w-[370px] justify-between  flex items-center bg-gray  mt-[30px] h-[370px] flex-col dark:border-gray-400'>
-        <img style={{width : '420px', height : '315px', margin : 'auto', borderRadius : '10px'  }} src={ProjeOne}></img>
-
-          <div className='card-footer flex justify-center flex-col w-[100%] bg-black text-white p-5 h-[60px]'>
-            <p>Spotify - Login</p>
-            <p>Proje 4 :</p>
-          </div>
-        </div>
-        <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 rounded-tr-2xl rounded-l-md  w-[370px] justify-between  flex items-center bg-gray  mt-[30px] h-[370px] flex-col dark:border-gray-400'>
-            <img style={{width : '420px', height : '315px', margin : 'auto', borderRadius : '10px'  }} src={ProjeOne}></img>
-
-              <div className='card-footer flex justify-center flex-col w-[100%] bg-black text-white p-5 h-[60px]'>
-                <p>Spotify - Login</p>
-                <p>Proje 5 :</p>
-              </div>
+        <div className='w-full h-full overflow-auto '>
+        <img 
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+  }} 
+  src={Mywebsite} 
+  alt="Website Screenshot"
+/>
             </div>
-            <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 rounded-tr-2xl rounded-l-md  w-[370px] justify-between  flex items-center bg-gray  mt-[30px] h-[370px] flex-col dark:border-gray-400'>
-            <img style={{width : '420px', height : '315px', margin : 'auto', borderRadius : '10px'  }} src={ProjeOne}></img>
+            <div className='card-footer flex justify-center  flex-col w-[100%] bg-black  text-white p-5 h-[60px]'>
+          <div className='flex items-center justify-between flex-row'>
+          <h1>Personal Portolio</h1>
+          <div className='flex items-center justify-center flex-row'>
+          <FaSquareGithub initial="hidden" className='mr-[10px] text-xl rounded-full' /> 
+          <h1>Live</h1>
 
-              <div className='card-footer flex justify-center flex-col w-[100%] bg-black text-white p-5 h-[60px]'>
-                <p>Spotify - Login</p>
-                <p>Proje 6 :</p>
-              </div>
+          </div>
+
+          </div>
+          </div>
+        </div>
+        <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 w-1/3 h-[405px] justify-between  flex items-center bg-gray  mt-[30px]  flex-col  dark:border-gray-400'>
+        <div className='w-full h-full overflow-auto '>
+        <img 
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+  }} 
+  src={Mywebsite} 
+  alt="Website Screenshot"
+/>
+            </div>
+            <div className='card-footer flex justify-center  flex-col w-[100%] bg-black  text-white p-5 h-[60px]'>
+          <div className='flex items-center justify-between flex-row'>
+          <h1>Personal Portolio</h1>
+          <div className='flex items-center justify-center flex-row'>
+          <FaSquareGithub initial="hidden" className='mr-[10px] text-xl rounded-full' /> 
+          <h1>Live</h1>
+
+          </div>
+
+          </div>
+          </div>
+        </div>
+        <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 w-1/3 h-[405px] justify-between  flex items-center bg-gray  mt-[30px] flex-col dark:border-gray-400'>
+        <div className='w-full h-full overflow-auto '>
+        <img 
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+  }} 
+  src={Mywebsite} 
+  alt="Website Screenshot"
+/>
+            </div>
+            <div className='card-footer flex justify-center  flex-col w-[100%] bg-black  text-white p-5 h-[60px]'>
+          <div className='flex items-center justify-between flex-row'>
+          <h1>Personal Portolio</h1>
+          <div className='flex items-center justify-center flex-row'>
+          <FaSquareGithub initial="hidden" className='mr-[10px] text-xl rounded-full' /> 
+          <h1>Live</h1>
+
+          </div>
+
+          </div>
+          </div>
+        </div>
+        <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 w-1/3 h-[405px] justify-between  flex items-center bg-gray  mt-[30px] flex-col dark:border-gray-400'>
+        <div className='w-full h-full overflow-auto '>
+        <img 
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+  }} 
+  src={Mywebsite} 
+  alt="Website Screenshot"
+/>
+            </div>
+            <div className='card-footer flex justify-center  flex-col w-[100%] bg-black  text-white p-5 h-[60px]'>
+          <div className='flex items-center justify-between flex-row'>
+          <h1>Personal Portolio</h1>
+          <div className='flex items-center justify-center flex-row'>
+          <FaSquareGithub initial="hidden" className='mr-[10px] text-xl rounded-full' /> 
+          <h1>Live</h1>
+
+          </div>
+
+          </div>
+          </div>
+            </div>
+            <div className='card border border-black border-t-4 shadow-lg shadow-gray-600   w-1/3 h-[405px] justify-between  flex items-center bg-gray  mt-[30px]  flex-col dark:border-gray-400'>
+            <div className='w-full h-full overflow-auto '>
+        <img 
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+  }} 
+  src={Mywebsite} 
+  alt="Website Screenshot"
+/>
+            </div>
+            <div className='card-footer flex justify-center  flex-col w-[100%] bg-black  text-white p-5 h-[60px]'>
+          <div className='flex items-center justify-between flex-row'>
+          <h1>Personal Portolio</h1>
+          <div className='flex items-center justify-center flex-row'>
+          <FaSquareGithub initial="hidden" className='mr-[10px] text-xl rounded-full' /> 
+          <h1>Live</h1>
+
+          </div>
+
+          </div>
+          </div>
             </div>
         {clickMore && (
           <>
             
-            <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 rounded-tr-2xl rounded-l-md  w-[370px] justify-between  flex items-center bg-gray  mt-[30px] h-[370px] flex-col dark:border-gray-400'>
-            <img style={{width : '420px', height : '315px', margin : 'auto', borderRadius : '10px'  }} src={ProjeOne}></img>
-
-              <div className='card-footer flex justify-center flex-col w-[100%] bg-black text-white p-5 h-[60px]'>
-                <p>Spotify - Login</p>
-                <p>Proje 7 :</p>
-              </div>
+            <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 w-1/3 h-[405px]  justify-between  flex items-center bg-gray  mt-[30px]  flex-col dark:border-gray-400'>
+            <div className='w-full h-full overflow-auto '>
+        <img 
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+  }} 
+  src={Mywebsite} 
+  alt="Website Screenshot"
+/>
             </div>
-            <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 rounded-tr-2xl rounded-l-md  w-[370px] justify-between  flex items-center bg-gray  mt-[30px] h-[370px] flex-col dark:border-gray-400'>
-            <img style={{width : '420px', height : '315px', margin : 'auto', borderRadius : '10px'  }} src={ProjeOne}></img>
+            <div className='card-footer flex justify-center  flex-col w-[100%] bg-black  text-white p-5 h-[60px]'>
+          <div className='flex items-center justify-between flex-row'>
+          <h1>Personal Portolio</h1>
+          <div className='flex items-center justify-center flex-row'>
+          <FaSquareGithub initial="hidden" className='mr-[10px] text-xl rounded-full' /> 
+          <h1>Live</h1>
 
-              <div className='card-footer flex justify-center flex-col w-[100%] bg-black text-white p-5 h-[60px]'>
-                <p>Spotify - Login</p>
-                <p>Proje 8 :</p>
-              </div>
+          </div>
+
+          </div>
+          </div>
+            </div>
+            <div className='card border border-black border-t-4 shadow-lg shadow-gray-600 w-1/3 h-[405px] justify-between  flex items-center bg-gray  mt-[30px]  flex-col dark:border-gray-400'>
+            <div className='w-full h-full overflow-auto '>
+        <img 
+  style={{ 
+    width: '100%', 
+    height: 'auto', 
+  }} 
+  src={Mywebsite} 
+  alt="Website Screenshot"
+/>
+            </div>
+            <div className='card-footer flex justify-center  flex-col w-[100%] bg-black  text-white p-5 h-[60px]'>
+          <div className='flex items-center justify-between flex-row'>
+          <h1>Personal Portolio</h1>
+          <div className='flex items-center justify-center flex-row'>
+          <FaSquareGithub initial="hidden" className='mr-[10px] text-xl rounded-full' /> 
+          <h1>Live</h1>
+
+          </div>
+
+          </div>
+          </div>
             </div>
           </>
         )}
