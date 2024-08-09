@@ -8,6 +8,21 @@ import { useContext } from 'react';
 function Cv() {
   const { darkMode } = useContext(DarkModeContext);
 
+
+  const handleDownloadTr = () => {
+    const link = document.createElement('a');
+    link.href = '/cv/TR_CV.pdf'; 
+    link.download = 'TR_CV.pdf';
+    link.click();
+  };
+
+  const handleDownloadEng = () => {
+    const link = document.createElement('a');
+    link.href = '/cv/ENG_CV.pdf'; 
+    link.download = 'ENG_CV.pdf';
+    link.click();
+  };
+
   return (
     <div className={darkMode ? 'dark' : ''}>
     <div className='bg-black flex items-center justify-center flex-col h-[27vh] dark:bg-zinc-200'>
@@ -18,7 +33,7 @@ function Cv() {
       <FaLongArrowAltDown className='text-white arrow  text-4xl dark:text-black' />
       <FaLongArrowAltDown className='text-white arrow text-4xl dark:text-black' />
       </div>
-      <div className='mt-4'><button className='bg-transparent text-white border text-sm cursor-pointer border-white w-[125px] h-[34px] dark:border-black dark:text-black'>English Cv</button> <button className='bg-transparent text-white border text-sm cursor-pointer border-white w-[125px] h-[34px] dark:border-black dark:text-black'>Turkish Cv</button></div>
+      <div className='mt-4'><button onClick={handleDownloadEng} className='bg-transparent text-white border text-sm cursor-pointer border-white w-[125px] h-[34px] dark:border-black dark:text-black'>English Cv</button> <button onClick={handleDownloadTr} className='bg-transparent text-white border text-sm cursor-pointer border-white w-[125px] h-[34px] dark:border-black dark:text-black'>Turkish Cv</button></div>
     </div>
     </div>
   )
