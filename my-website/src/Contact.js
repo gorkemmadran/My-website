@@ -30,8 +30,8 @@ function Contact() {
             <div className='container mx-auto pt-7 flex justify-around xs:flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row'>
                 <div className='flex  justify-evenly flex-col'>
                     <div className='flex  justify-center flex-col xs:flex xs:items-center xs:justify-center  sm:flex sm:items-center sm:justify-center  md:flex md:items-center md:justify-center'>
-                    <h3 className='text-xl text-gray-700'>Hey There,</h3>
-                    <h1 className='text-[38px]'>Let's Get In Touch</h1>
+                    <h3 className='text-xl text-gray-700 dark:text-gray-200'>Hey There,</h3>
+                    <h1 className='text-[38px] dark:text-white'>Let's Get In Touch</h1>
                     </div>
                     <div className='flex  mx-auto flex-col xs:mt-4'>
                     <div className='flex xs:flex xs:items-center mt-2 '>
